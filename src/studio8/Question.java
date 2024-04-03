@@ -12,14 +12,14 @@ public class Question {
 	}
 	
 	public void displayPrompt() {
-		System.out.println(this.prompt + "(" + this.points + " points)");
-	}
+		System.out.println(this.prompt + " (" + this.points + " points)");
+	} // printing the prompt and the number of points associated with the question
 	
 	public int checkAnswer(String givenAnswer) {
 		if(answer.equals(givenAnswer)) { //String comparison
-			return this.points;
+			return this.points; // if the answer match, you get the points
 		} else {
-			return 0;
+			return 0; // otherwise you get 0 points for that question
 		}
 	}
 	
